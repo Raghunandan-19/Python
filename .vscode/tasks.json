@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run Python with input/output redirection",
+      "type": "shell",
+      "command": "python3",
+      "args": [
+        "${file}",
+        "<",
+        "input.txt",
+        ">",
+        "output.txt"
+      ],
+      "presentation": {
+        "reveal": "never"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
